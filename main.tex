@@ -1,0 +1,38 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{helvet} % Schriftart Helvetica
+\renewcommand\familydefault{\sfdefault}
+\usepackage{graphicx} % Bilder
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{pdfpages}
+%\usepackage{wasysym} %für XBox
+\usepackage[style=apa,backend=biber,language=german]{biblatex}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=green]{hyperref}
+
+\addbibresource{testbiblio.bib}
+\author{Marc C., Christian H.}
+\title{Vorlage für eine Arbeit an der HSLU}
+\begin{document}
+\maketitle
+\includegraphics[scale=0.08]{bilder/IMG_6461.JPG} 
+
+\newpage 
+\tableofcontents
+
+\includepdf[pages=2, scale=1.0, frame=false]{Vorlage_Deckblatt_Transferarbeit}
+
+\input{bsp_citat/zitat} %nur temporär zur Illustration
+
+\section{Einleitung}
+tbd
+\subsection{•}
+tbd
+\subsubsection{•}
+tbd
+
+\printbibliography
+\end{document}
