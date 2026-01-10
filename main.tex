@@ -1,38 +1,159 @@
-\documentclass[10pt,a4paper]{article}
+% KOMA-Script für professionelle wissenschaftliche Arbeiten
+\documentclass[10pt,a4paper,twoside,openright,bibliography=totoc]{scrartcl}
+
+% Encoding und Sprache
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{helvet} % Schriftart Helvetica
+
+% Schriftart Helvetica (serifenlos)
+\usepackage{helvet}
 \renewcommand\familydefault{\sfdefault}
-\usepackage{graphicx} % Bilder
+
+% Seitenränder für wissenschaftliche Arbeiten optimiert
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,bindingoffset=0.5cm]{geometry}
+
+% Grafiken und PDF-Einbindung
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+% Mathematische Symbole (falls benötigt)
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{pdfpages}
-%\usepackage{wasysym} %für XBox
+
+% Tabellen verbessern
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% Bibliographie mit APA-Stil
 \usepackage[style=apa,backend=biber,language=german]{biblatex}
+\addbibresource{testbiblio.bib}
+
+% Hyperlinks (sollte als letztes Package geladen werden)
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=green]{hyperref}
 
-\addbibresource{testbiblio.bib}
+% Metadaten für das Dokument
 \author{Marc C., Christian H.}
-\title{Vorlage für eine Arbeit an der HSLU}
+\title{Enterprise Architecture}
+\subtitle{Transferarbeit CAS EA3}
+\date{\today}
+
 \begin{document}
-\maketitle
-\includegraphics[scale=0.08]{bilder/IMG_6461.JPG} 
 
-\newpage 
+% Deckblatt aus HSLU-Vorlage einbinden
+\includepdf[pages=1]{Vorlage_Deckblatt_Transferarbeit}
+
+% Optional: Eigenes Titelbild/Logo auf separater Seite
+\newpage
+\begin{center}
+\includegraphics[scale=0.08]{bilder/IMG_6461.JPG}
+\end{center}
+
+% Inhaltsverzeichnis
+\newpage
 \tableofcontents
+\listoffigures % Optional: Abbildungsverzeichnis
+\listoftables  % Optional: Tabellenverzeichnis
 
-\includepdf[pages=2, scale=1.0, frame=false]{Vorlage_Deckblatt_Transferarbeit}
+% Beispiel-Zitation (kann später entfernt werden)
+\newpage
+\input{bsp_citat/zitat}
 
-\input{bsp_citat/zitat} %nur temporär zur Illustration
+% ============================================================
+% HAUPTTEIL DER ARBEIT
+% ============================================================
 
+\newpage
 \section{Einleitung}
-tbd
-\subsection{•}
-tbd
-\subsubsection{•}
+\label{sec:einleitung}
+
+% Hier: Motivation, Problemstellung, Zielsetzung, Abgrenzung
+
+\subsection{Ausgangslage und Motivation}
+\label{subsec:motivation}
 tbd
 
+\subsection{Zielsetzung der Arbeit}
+\label{subsec:zielsetzung}
+tbd
+
+\subsection{Aufbau der Arbeit}
+\label{subsec:aufbau}
+tbd
+
+\section{Grundlagen Enterprise Architecture}
+\label{sec:grundlagen}
+
+% Hier: Definitionen, Frameworks (TOGAF, Zachman, etc.)
+
+\subsection{Definition und Abgrenzung}
+\label{subsec:definition}
+tbd
+
+\subsection{Enterprise Architecture Frameworks}
+\label{subsec:frameworks}
+tbd
+
+\subsection{Relevante Konzepte und Methoden}
+\label{subsec:konzepte}
+tbd
+
+\section{Methodik und Vorgehen}
+\label{sec:methodik}
+
+% Hier: Wie wurde vorgegangen? Welche Methoden wurden angewendet?
+
+tbd
+
+\section{Analyse und Ergebnisse}
+\label{sec:analyse}
+
+% Hier: Hauptteil der Arbeit - Analyse, Konzepte, Lösungen
+
+\subsection{Ist-Analyse}
+\label{subsec:ist}
+tbd
+
+\subsection{Soll-Konzept}
+\label{subsec:soll}
+tbd
+
+\subsection{Bewertung und Empfehlungen}
+\label{subsec:bewertung}
+tbd
+
+\section{Diskussion}
+\label{sec:diskussion}
+
+% Hier: Interpretation der Ergebnisse, Limitationen, kritische Reflexion
+
+tbd
+
+\section{Fazit und Ausblick}
+\label{sec:fazit}
+
+% Hier: Zusammenfassung, Beantwortung der Forschungsfrage, Ausblick
+
+tbd
+
+% ============================================================
+% ANHANG
+% ============================================================
+
+\newpage
+\appendix
+\section{Anhang}
+\label{sec:anhang}
+
+% Hier können zusätzliche Materialien eingefügt werden
+% z.B. Interviewleitfäden, detaillierte Diagramme, Code-Listings
+
+% ============================================================
+% LITERATURVERZEICHNIS
+% ============================================================
+
+\newpage
 \printbibliography
+
 \end{document}
