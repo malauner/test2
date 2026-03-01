@@ -20,6 +20,7 @@ test2/
 │   └── fazit.tex
 ├── diagrams/                         # Mermaid-Diagramme (.mmd) und gerenderte PDFs
 ├── figures/
+│   ├── EA Vorstellung 2026-01-19.pptx  # Präsentation EA-Vorstellung
 │   └── canvas-designs/              # Canvas-Export PDFs
 ├── bibliography/
 │   └── references.bib               # Bibliographie (Zotero/BibTeX)
