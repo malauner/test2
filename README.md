@@ -24,7 +24,7 @@ test2/
 ├── bibliography/
 │   └── references.bib               # Bibliographie (Zotero/BibTeX)
 ├── bilder/                           # Sonstige Abbildungen
-├── bsp_citat/                        # Beispiele für Zitation (temporär)
+├── zitate/                           # Beispiele für Zitation (temporär)
 └── Vorlage_Deckblatt_Transferarbeit.pdf  # HSLU Deckblatt
 ```
 
