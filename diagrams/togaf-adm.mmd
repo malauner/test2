@@ -1,0 +1,60 @@
+flowchart TB
+    PM["**Preliminary Phase**
+    Frameworks & Principles"]
+
+    A["**Phase A**
+    Architecture Vision"]
+
+    B["**Phase B**
+    Business Architecture"]
+
+    C["**Phase C**
+    Information Systems Architecture
+    (Data & Application)"]
+
+    D["**Phase D**
+    Technology Architecture"]
+
+    E["**Phase E**
+    Opportunities & Solutions"]
+
+    F["**Phase F**
+    Migration Planning"]
+
+    G["**Phase G**
+    Implementation Governance"]
+
+    H["**Phase H**
+    Architecture Change Management"]
+
+    REQ["**Requirements Management**"]
+
+    PM --> A
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> A
+
+    REQ <--> A
+    REQ <--> B
+    REQ <--> C
+    REQ <--> D
+    REQ <--> E
+    REQ <--> F
+    REQ <--> G
+    REQ <--> H
+
+    style PM fill:#e2e8f0,stroke:#64748b,color:#1e293b
+    style A fill:#dbeafe,stroke:#3b82f6,color:#1e3a5f
+    style B fill:#fde68a,stroke:#f59e0b,color:#78350f
+    style C fill:#d1fae5,stroke:#10b981,color:#064e3b
+    style D fill:#ede9fe,stroke:#8b5cf6,color:#3b0764
+    style E fill:#fee2e2,stroke:#ef4444,color:#7f1d1d
+    style F fill:#ffedd5,stroke:#f97316,color:#7c2d12
+    style G fill:#cffafe,stroke:#06b6d4,color:#164e63
+    style H fill:#fce7f3,stroke:#ec4899,color:#831843
+    style REQ fill:#f1f5f9,stroke:#475569,color:#0f172a
