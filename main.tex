@@ -28,7 +28,7 @@
 
 % Bibliographie mit APA-Stil
 \usepackage[style=apa,backend=biber,language=german]{biblatex}
-\addbibresource{testbiblio.bib}
+\addbibresource{bibliography/references.bib}
 
 % Hyperlinks (sollte als letztes Package geladen werden)
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=green]{hyperref}
@@ -65,77 +65,22 @@
 % ============================================================
 
 \newpage
-\section{Einleitung}
-\label{sec:einleitung}
+\input{chapters/einleitung}
 
-% Hier: Motivation, Problemstellung, Zielsetzung, Abgrenzung
+\newpage
+\input{chapters/ea-grundlagen}
 
-\subsection{Ausgangslage und Motivation}
-\label{subsec:motivation}
-tbd
+\newpage
+\input{chapters/methodik}
 
-\subsection{Zielsetzung der Arbeit}
-\label{subsec:zielsetzung}
-tbd
+\newpage
+\input{chapters/analyse}
 
-\subsection{Aufbau der Arbeit}
-\label{subsec:aufbau}
-tbd
+\newpage
+\input{chapters/diskussion}
 
-\section{Grundlagen Enterprise Architecture}
-\label{sec:grundlagen}
-
-% Hier: Definitionen, Frameworks (TOGAF, Zachman, etc.)
-
-\subsection{Definition und Abgrenzung}
-\label{subsec:definition}
-tbd
-
-\subsection{Enterprise Architecture Frameworks}
-\label{subsec:frameworks}
-tbd
-
-\subsection{Relevante Konzepte und Methoden}
-\label{subsec:konzepte}
-tbd
-
-\section{Methodik und Vorgehen}
-\label{sec:methodik}
-
-% Hier: Wie wurde vorgegangen? Welche Methoden wurden angewendet?
-
-tbd
-
-\section{Analyse und Ergebnisse}
-\label{sec:analyse}
-
-% Hier: Hauptteil der Arbeit - Analyse, Konzepte, Lösungen
-
-\subsection{Ist-Analyse}
-\label{subsec:ist}
-tbd
-
-\subsection{Soll-Konzept}
-\label{subsec:soll}
-tbd
-
-\subsection{Bewertung und Empfehlungen}
-\label{subsec:bewertung}
-tbd
-
-\section{Diskussion}
-\label{sec:diskussion}
-
-% Hier: Interpretation der Ergebnisse, Limitationen, kritische Reflexion
-
-tbd
-
-\section{Fazit und Ausblick}
-\label{sec:fazit}
-
-% Hier: Zusammenfassung, Beantwortung der Forschungsfrage, Ausblick
-
-tbd
+\newpage
+\input{chapters/fazit}
 
 % ============================================================
 % ANHANG
