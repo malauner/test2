@@ -16,6 +16,8 @@ node_modules/
 *.run.xml
 *.blg
 *.bbl
+*.lot
+*.lof
 
 # Temp
 *.tmp
