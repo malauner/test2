@@ -1,0 +1,394 @@
+% ============================================================
+\section{Grundlagen Enterprise Architecture}
+\label{sec:grundlagen}
+
+\subsection{Definition und Abgrenzung}
+\label{subsec:definition}
+
+Enterprise Architecture (EA) ist ein ganzheitlicher Ansatz zur Gestaltung und Steuerung der Unternehmensarchitektur. Sie umfasst die strategische Ausrichtung von Business, Daten, Applikationen und Technologie-Infrastruktur.
+
+EA schafft Transparenz über die IT-Landschaft, unterstützt strategische Entscheidungen und ermöglicht eine effiziente Transformation der Organisation. Ein gut definiertes Enterprise Architecture Framework hilft dabei, die Komplexität zu reduzieren, Redundanzen zu vermeiden und die Ausrichtung zwischen Business und IT sicherzustellen.
+
+\subsection{Enterprise Architecture Frameworks}
+\label{subsec:frameworks}
+
+EA-Frameworks bieten strukturierte Methoden und Best Practices für die Entwicklung und Verwaltung von Unternehmensarchitekturen. Im Folgenden werden fünf wesentliche Frameworks detailliert vorgestellt:
+
+\subsubsection{TOGAF - The Open Group Architecture Framework}
+\label{subsubsec:togaf}
+
+TOGAF ist eines der am weitesten verbreiteten und ausgereiftesten EA-Frameworks weltweit. Das Framework wurde von The Open Group entwickelt und bietet eine umfassende Methodik für die Entwicklung, Implementierung und Wartung von Enterprise Architectures.
+
+\paragraph{Architecture Development Method (ADM)}
+Das Herzstück von TOGAF ist die Architecture Development Method, ein iterativer Prozess mit acht Phasen:
+
+\begin{itemize}
+\item \textbf{Preliminary Phase:} Framework und Prinzipien etablieren
+\item \textbf{Phase A - Architecture Vision:} Scope und Stakeholder-Anforderungen definieren
+\item \textbf{Phase B - Business Architecture:} Geschäftsprozesse und Organisationsstruktur modellieren
+\item \textbf{Phase C - Information Systems Architecture:} Daten- und Applikationsarchitektur entwickeln
+\item \textbf{Phase D - Technology Architecture:} IT-Infrastruktur und Technologie-Plattformen definieren
+\item \textbf{Phase E - Opportunities \& Solutions:} Implementierungsplanung und Roadmap erstellen
+\item \textbf{Phase F - Migration Planning:} Detaillierte Migration und Transformation planen
+\item \textbf{Phase G - Implementation Governance:} Architektur-Compliance sicherstellen
+\item \textbf{Phase H - Architecture Change Management:} Kontinuierliche Verbesserung und Änderungsmanagement
+\end{itemize}
+
+\paragraph{Kernkomponenten}
+\begin{itemize}
+\item \textbf{Enterprise Continuum:} Klassifizierung von Architekturen von generisch bis spezifisch
+\item \textbf{Architecture Repository:} Zentrale Ablage für alle Architektur-Artefakte
+\item \textbf{Architecture Governance:} Prozesse zur Sicherstellung der Architektur-Compliance
+\item \textbf{Architecture Content Framework:} Strukturierte Beschreibung von Architektur-Deliverables
+\end{itemize}
+
+\paragraph{Stärken}
+\begin{itemize}
+\item Umfassende, erprobte Methodik mit weltweiter Verbreitung
+\item Starke Community und etablierte Zertifizierungsprogramme
+\item Sehr gut dokumentiert und standardisiert
+\item Eignet sich besonders für große, komplexe Organisationen und Transformationsprojekte
+\end{itemize}
+
+\subsubsection{Zachman Framework}
+\label{subsubsec:zachman}
+
+Das Zachman Framework ist ein taxonomisches Schema zur Klassifizierung und Organisation von Enterprise Architecture Artefakten. Es wurde von John Zachman entwickelt und basiert auf einer systematischen 6x6-Matrix.
+
+\paragraph{Die 6x6 Matrix}
+Das Framework betrachtet Architekturen aus zwei Dimensionen:
+
+\textbf{Perspektiven (Zeilen):}
+\begin{itemize}
+\item \textbf{Planner:} Scope und Kontext (Stakeholder-Perspektive)
+\item \textbf{Owner:} Business-Modell (Executive-Perspektive)
+\item \textbf{Designer:} System-Modell (Architekten-Perspektive)
+\item \textbf{Builder:} Technologie-Modell (Entwickler-Perspektive)
+\item \textbf{Subcontractor:} Detaillierte Spezifikationen (Implementierer-Perspektive)
+\item \textbf{User:} Operatives System (Nutzer-Perspektive)
+\end{itemize}
+
+\textbf{Fragestellungen (Spalten):}
+\begin{itemize}
+\item \textbf{What:} Daten und Entities
+\item \textbf{How:} Funktionen und Prozesse
+\item \textbf{Where:} Netzwerk und Standorte
+\item \textbf{Who:} Menschen und Organisationen
+\item \textbf{When:} Zeit und Ereignisse
+\item \textbf{Why:} Motivation und Ziele
+\end{itemize}
+
+\paragraph{Stärken}
+\begin{itemize}
+\item Klare Strukturierung und umfassende Taxonomie
+\item Perspektivenvielfalt ermöglicht ganzheitliche Betrachtung
+\item Framework-agnostisch und kombinierbar mit anderen Ansätzen
+\item Fokus auf verschiedene Stakeholder-Sichten
+\item Ideal für Taxonomie und systematisches Artefakt-Management
+\end{itemize}
+
+\subsubsection{FEAF - Federal Enterprise Architecture Framework}
+\label{subsubsec:feaf}
+
+FEAF wurde ursprünglich für US-Bundesbehörden entwickelt und ist besonders in stark regulierten Umgebungen verbreitet. Das Framework fokussiert auf Governance, Compliance und standardisierte Architekturbeschreibungen.
+
+\paragraph{Vier Architektur-Domänen}
+\begin{itemize}
+\item \textbf{Business Architecture:} Geschäftsprozesse, Organisationsstrukturen, Geschäftsfunktionen
+\item \textbf{Data Architecture:} Datenmodelle, Datenflüsse, Informationsmanagement
+\item \textbf{Application Architecture:} Applikationslandschaft, Schnittstellen, Funktionen
+\item \textbf{Technology Architecture:} IT-Infrastruktur, Plattformen, Standards
+\end{itemize}
+
+\paragraph{Stärken}
+\begin{itemize}
+\item Starker Fokus auf Governance, Compliance und regulatorische Anforderungen
+\item Bewährt im öffentlichen Sektor und regulierten Industrien
+\item Detaillierte Referenzmodelle und standardisierte Dokumentation
+\item Eignet sich besonders für Behörden und compliance-kritische Organisationen
+\end{itemize}
+
+\subsubsection{Gartner Enterprise Architecture Framework}
+\label{subsubsec:gartner}
+
+Das Gartner EA Framework ist ein praxisorientierter Ansatz, der stark auf Business-Value und pragmatische Umsetzung fokussiert. Es berücksichtigt aktuelle Trends wie Digitalisierung, Cloud und Agilität.
+
+\paragraph{Business-getriebener Ansatz}
+Gartner betont die Ausrichtung der EA auf Geschäftswert und messbare Ergebnisse:
+\begin{itemize}
+\item \textbf{Value Delivery:} Fokus auf Business-Outcomes statt rein technischer Artefakte
+\item \textbf{Continuous Improvement:} Iterative, agile Entwicklung der Architektur
+\item \textbf{Pragmatic Implementation:} Praktische Umsetzbarkeit vor theoretischer Vollständigkeit
+\end{itemize}
+
+\paragraph{Stärken}
+\begin{itemize}
+\item Praxisnah und geschäftsorientiert
+\item Berücksichtigung aktueller Technologie-Trends und Best Practices
+\item Regelmäßige Updates durch umfangreiche Gartner-Research
+\item Eignet sich für agile Organisationen mit Fokus auf schnelle Ergebnisse
+\end{itemize}
+
+\subsubsection{ArchiMate}
+\label{subsubsec:archimate}
+
+ArchiMate ist eine standardisierte Modellierungssprache für Enterprise Architecture, entwickelt von The Open Group. Im Gegensatz zu den anderen Frameworks ist ArchiMate primär eine visuelle Notationssprache.
+
+\paragraph{Drei Architektur-Layer}
+\begin{itemize}
+\item \textbf{Business Layer:} Geschäftsprozesse, Akteure, Services, Produkte
+\item \textbf{Application Layer:} Applikationen, Komponenten, Schnittstellen, Daten
+\item \textbf{Technology Layer:} Infrastruktur, Netzwerke, Plattformen, Systeme
+\end{itemize}
+
+\paragraph{Beziehungstypen}
+ArchiMate definiert verschiedene Beziehungstypen zwischen Elementen:
+\begin{itemize}
+\item Strukturelle Beziehungen (Composition, Aggregation, Assignment)
+\item Abhängigkeitsbeziehungen (Serving, Access, Influence)
+\item Dynamische Beziehungen (Flow, Triggering)
+\item Andere (Specialization, Realization, Association)
+\end{itemize}
+
+\paragraph{Stärken}
+\begin{itemize}
+\item Standardisierte Notation (Open Group Standard)
+\item Hervorragende Visualisierungsmöglichkeiten für komplexe Zusammenhänge
+\item Breite Tool-Unterstützung durch verschiedene EA-Tools
+\item Sehr gut integrierbar mit TOGAF
+\item Ideal für visuelle Kommunikation von Architektur-Entscheidungen
+\end{itemize}
+
+\subsection{Framework-Vergleich}
+\label{subsec:framework-vergleich}
+
+Die verschiedenen EA-Frameworks haben unterschiedliche Stärken und eignen sich für unterschiedliche Anwendungsfälle. Tabelle \ref{tab:framework-vergleich} gibt einen Überblick über die Hauptcharakteristika.
+
+\begin{table}[h]
+\centering
+\caption{Vergleich der EA-Frameworks}
+\label{tab:framework-vergleich}
+\begin{tabular}{lll}
+\toprule
+\textbf{Framework} & \textbf{Hauptstärke} & \textbf{Typischer Anwendungsfall} \\
+\midrule
+TOGAF & Umfassende Methodik & Große Organisationen, komplexe Transformationen \\
+Zachman & Strukturierte Klassifikation & Taxonomie, Artefakt-Management \\
+FEAF & Compliance-fokussiert & Behörden, regulierte Industrien \\
+Gartner & Business-Value, pragmatisch & Agile Organisationen, schnelle Ergebnisse \\
+ArchiMate & Visuelle Kommunikation & Modellierung, Stakeholder-Kommunikation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Enterprise Architecture Tools}
+\label{subsec:tools}
+
+Für die praktische Umsetzung von EA stehen verschiedene spezialisierte Werkzeuge zur Verfügung. Die Wahl des richtigen Tools sollte Framework-Unterstützung, Kollaborationsmöglichkeiten und Integration in die bestehende Tool-Landschaft berücksichtigen.
+
+\subsubsection{Sparx Systems Enterprise Architect}
+\label{subsubsec:sparx}
+
+Umfassendes Modellierungs-Tool mit Unterstützung für UML, BPMN, SysML und ArchiMate. Enterprise Architect ist besonders stark in technischer Dokumentation, Code-Engineering und der Integration verschiedener Modellierungsstandards.
+
+\subsubsection{BiZZdesign Enterprise Studio}
+\label{subsubsec:bizzdesign}
+
+ArchiMate-native, kollaborative EA-Plattform mit starkem Fokus auf Business-IT-Alignment und strategische Planung. BiZZdesign bietet umfangreiche Analysemöglichkeiten und Dashboards für Entscheidungsträger.
+
+\subsubsection{LeanIX}
+\label{subsubsec:leanix}
+
+Moderne, cloud-basierte SaaS-Lösung mit intuitivem Interface. Fokus auf Application Portfolio Management, Cloud-Transformation und IT-Landschaftsoptimierung. LeanIX zeichnet sich durch Benutzerfreundlichkeit und schnelle Time-to-Value aus.
+
+\subsubsection{Archi}
+\label{subsubsec:archi}
+
+Open-Source-Tool für ArchiMate-Modellierung. Kostenfrei, leichtgewichtig und ideal für Einstieg in EA-Modellierung sowie kleinere Teams. Trotz des Open-Source-Charakters bietet Archi eine vollständige ArchiMate-Unterstützung.
+
+\subsubsection{ARIS (Software AG)}
+\label{subsubsec:aris}
+
+Enterprise-Suite mit starkem Fokus auf Business Process Management, Governance, Risk \& Compliance (GRC). ARIS integriert Prozessmanagement mit Enterprise Architecture und bietet umfangreiche Analyse- und Simulationsmöglichkeiten.
+
+\subsection{Domain Driven Design - Kernkonzepte}
+\label{subsec:ddd}
+
+Domain Driven Design (DDD) ist ein Ansatz zur Softwareentwicklung für komplexe Domänen. DDD fokussiert auf die Geschäftslogik und die gemeinsame Sprache zwischen Entwicklern und Domänen-Experten. Die Kernidee: Software spiegelt die Geschäftsdomäne wider und entwickelt sich gemeinsam mit dem Verständnis der Domäne.
+
+\subsubsection{Strategisches Design}
+\label{subsubsec:ddd-strategic}
+
+Das strategische Design in DDD befasst sich mit der großflächigen Strukturierung der Domäne:
+
+\paragraph{Bounded Context}
+Ein Bounded Context definiert eine explizite Grenze, innerhalb derer ein bestimmtes Domänenmodell gültig ist. Jeder Bounded Context hat seine eigene Ubiquitous Language.
+
+\textbf{Warum Bounded Contexts?}
+\begin{itemize}
+\item Ein einziges Modell für alles ist unmöglich und unpraktisch
+\item Begriffe haben in verschiedenen Kontexten unterschiedliche Bedeutungen
+\item Verschiedene Perspektiven erfordern unterschiedliche Modelle
+\item Reduziert kognitive Last durch klare Abgrenzungen
+\end{itemize}
+
+\textbf{Beispiel "Kunde":}
+\begin{itemize}
+\item \textbf{Sales Context:} Kunde = Leads, Opportunities, Verkaufschancen
+\item \textbf{Shipping Context:} Kunde = Lieferadresse, Tracking-Informationen
+\item \textbf{Support Context:} Kunde = Tickets, SLA-Vereinbarungen
+\end{itemize}
+
+\paragraph{Context Mapping}
+Context Mapping beschreibt die Beziehungen zwischen verschiedenen Bounded Contexts:
+\begin{itemize}
+\item \textbf{Shared Kernel:} Gemeinsamer Code zwischen Contexts
+\item \textbf{Customer/Supplier:} Abhängigkeitsbeziehung zwischen Teams
+\item \textbf{Anti-Corruption Layer:} Schutzschicht gegen externe Modelle
+\item \textbf{Conformist:} Übernahme des externen Modells
+\item \textbf{Separate Ways:} Keine Integration notwendig
+\end{itemize}
+
+\paragraph{Ubiquitous Language}
+Eine gemeinsame, allgegenwärtige Sprache zwischen Entwicklern und Domänen-Experten. Diese Sprache:
+\begin{itemize}
+\item Wird im Code, in Dokumentation und in Gesprächen verwendet
+\item Reduziert Missverständnisse und Übersetzungsfehler
+\item Ist context-spezifisch (kann zwischen Bounded Contexts variieren)
+\item Entwickelt sich kontinuierlich mit dem Domänenverständnis
+\end{itemize}
+
+\subsubsection{Taktisches Design}
+\label{subsubsec:ddd-tactical}
+
+Das taktische Design fokussiert auf die Implementierung innerhalb eines Bounded Context:
+
+\paragraph{Entities}
+Objekte mit eindeutiger Identität über ihren gesamten Lebenszyklus hinweg. Die Identität bleibt erhalten, auch wenn sich Attribute ändern.
+
+\textbf{Beispiel:} Ein Kunde mit ID 12345 bleibt derselbe Kunde, auch wenn Name oder Adresse geändert werden.
+
+\paragraph{Value Objects}
+Immutable Objekte ohne konzeptionelle Identität, vollständig definiert durch ihre Attribute.
+
+\textbf{Beispiel:} Eine Adresse oder ein Geldbetrag. Zwei Adressen mit identischen Werten sind austauschbar.
+
+\textbf{Vorteile:}
+\begin{itemize}
+\item Einfacher zu testen und zu verstehen
+\item Thread-safe durch Immutability
+\item Keine Identitätsverwaltung notwendig
+\end{itemize}
+
+\paragraph{Aggregates}
+Ein Cluster von Objekten, die als Einheit behandelt werden, mit einem Aggregate Root als einzigem Einstiegspunkt.
+
+\textbf{Regeln für Aggregates:}
+\begin{itemize}
+\item Zugriff auf Aggregate-Interna nur über die Aggregate Root
+\item Die Root ist verantwortlich für die Wahrung aller Invarianten
+\item Transaktionsgrenzen entsprechen Aggregate-Grenzen
+\item Referenzen zwischen Aggregates nur über IDs, nicht über direkte Objektreferenzen
+\end{itemize}
+
+\textbf{Beispiel Order Aggregate:}
+\begin{itemize}
+\item \textbf{Root:} Order (Bestellung)
+\item \textbf{Entities:} OrderLine (Bestellposition)
+\item \textbf{Value Objects:} ShippingAddress, Money
+\item \textbf{Invariante:} Gesamtsumme = Summe aller Bestellpositionen
+\end{itemize}
+
+\textbf{Design-Tipp:} Small Aggregates bevorzugen. Nur zusammengehörige Daten in ein Aggregate packen. Eventual Consistency zwischen Aggregates akzeptieren.
+
+\paragraph{Domain Events}
+Ereignisse, die etwas Signifikantes in der Domäne ausdrücken (in der Vergangenheitsform).
+
+\textbf{Beispiele:}
+\begin{itemize}
+\item OrderPlaced (Bestellung aufgegeben)
+\item PaymentReceived (Zahlung eingegangen)
+\item CustomerRelocated (Kunde umgezogen)
+\end{itemize}
+
+\textbf{Vorteile:}
+\begin{itemize}
+\item Entkopplung zwischen Bounded Contexts
+\item Audit-Log und Event Sourcing möglich
+\item Basis für Event-Driven Architecture
+\end{itemize}
+
+\paragraph{Repositories und Services}
+\textbf{Repositories:} Zugriff auf Aggregates, Abstraktion der Persistenz
+
+\textbf{Domain Services:} Operationen, die nicht natürlich zu einer Entity oder einem Value Object gehören
+
+\subsection{Microservices Architektur}
+\label{subsec:microservices}
+
+Microservices ist ein Architekturstil, bei dem eine Anwendung aus kleinen, unabhängigen Services besteht.
+
+\paragraph{Kernprinzipien}
+\begin{itemize}
+\item \textbf{Single Responsibility:} Jeder Service hat eine klare, fokussierte Aufgabe
+\item \textbf{Autonomy:} Services können unabhängig entwickelt, deployed und skaliert werden
+\item \textbf{Decentralization:} Dezentrale Datenhaltung und Governance
+\item \textbf{Resilience:} Fehler in einem Service beeinträchtigen nicht das gesamte System
+\item \textbf{Observable:} Logging, Monitoring und Tracing sind essenziell
+\end{itemize}
+
+\paragraph{Charakteristika}
+\begin{itemize}
+\item Losgelöste Deployments
+\item Polyglot Persistence (verschiedene Datenbanken pro Service)
+\item API-basierte Kommunikation (REST, gRPC, Events)
+\item Organisiert um Business Capabilities
+\end{itemize}
+
+\subsection{DDD und Microservices: Der perfekte Match}
+\label{subsec:ddd-microservices}
+
+Domain Driven Design und Microservices ergänzen sich ideal:
+
+\paragraph{Warum DDD und Microservices zusammenpassen}
+\begin{itemize}
+\item \textbf{Bounded Context = Service Boundary:} DDD definiert natürliche Servicegrenzen
+\item \textbf{Ubiquitous Language:} Klare Kommunikation innerhalb und zwischen Services
+\item \textbf{Aggregates:} Definieren Transaktionsgrenzen und Konsistenz-Boundaries
+\item \textbf{Strategic Patterns:} Context Mapping hilft bei Service-Integration
+\item \textbf{Business Alignment:} Beide Ansätze fokussieren auf Business-Value
+\end{itemize}
+
+\paragraph{Bounded Contexts als Microservices}
+Jeder Bounded Context kann als eigenständiger Microservice implementiert werden:
+\begin{itemize}
+\item Klare Grenzen und Verantwortlichkeiten
+\item Autonome Teams können an verschiedenen Contexts arbeiten
+\item Unabhängige Deployments pro Context möglich
+\item Technologie-Stack kann pro Context variieren
+\end{itemize}
+
+\subsection{Von DDD zu Microservices: Praktische Umsetzung}
+\label{subsec:ddd-zu-microservices}
+
+\paragraph{Schritt 1: Event Storming Workshop}
+Gemeinsam mit Domänen-Experten die Geschäftsprozesse und Events identifizieren. Events in der Vergangenheitsform formulieren (OrderPlaced, PaymentReceived).
+
+\paragraph{Schritt 2: Bounded Contexts identifizieren}
+Zusammengehörige Events und Kommandos zu Contexts gruppieren. Sprachliche Hinweise beachten (gleiche Begriffe mit unterschiedlicher Bedeutung = verschiedene Contexts).
+
+\paragraph{Schritt 3: Aggregates \& Service Boundaries definieren}
+Aggregates innerhalb der Bounded Contexts identifizieren. Aggregates als Basis für API-Design nutzen.
+
+\paragraph{Schritt 4: Microservice pro Bounded Context implementieren}
+1:1 Mapping zwischen Bounded Context und Microservice als Ausgangspunkt. Bei Bedarf können große Contexts später weiter aufgeteilt werden.
+
+\paragraph{Schritt 5: API-Design \& Integration Patterns}
+\begin{itemize}
+\item \textbf{Synchrone Kommunikation:} REST oder gRPC für Abfragen
+\item \textbf{Asynchrone Kommunikation:} Domain Events für lose Kopplung
+\item \textbf{Anti-Corruption Layer:} Schutz vor externen Änderungen
+\end{itemize}
+
+\paragraph{Grundprinzip}
+Start with the domain, let technology follow. Die Architektur sollte die Geschäftsdomäne widerspiegeln, nicht umgekehrt.

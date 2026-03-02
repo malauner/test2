@@ -1,0 +1,51 @@
+\section{verschiedene Zitatmöglichkeiten}
+\textit{BibLaTex} mit \textit{biber} bietet diverse Möglichkeiten ein Zitat zu erfassen. Das Cheatsheet\footnote{\url{https://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf}} zeigt ein paar Möglichkeiten auf.
+
+\subsection{Seitenzahlen}
+Grundsätzlich kann die Seitenzahlen immer optional in eckigen Klammern mitgegeben werden. Grundsätzlich ist man dort ziemlich frei.
+
+\subsection{cite - Autor, Jahr}
+Mit dem Befehl \textit{cite} wird das Ganze als Text ausgegeben wie \cite[4]{haberli_ernuchternde_2019}.
+
+\subsection{parencite - (Autor, Jahr)}
+Mit dem Befehl \textit{parencite} mit alles in Klammer \parencite[2]{haberli_ernuchternde_2019} erzeugt.
+
+\subsection{footcite - Fussnote mit Autor, Jahr}
+Mit dem Befehl \textit{footcite} wird das Ganze als Fussnote\footcite[45]{haberli_ernuchternde_2019}.
+
+\subsection{footcitetext - Fussnote nicht brauchen}
+Mit dem Befehl \textit{footcitetext} erzeugt auch eine Fussnote. Jedoch wird die Nummerierung nicht korrekt erzeugt. Deshalb würde ich das nicht einsetzen.
+
+\subsection{textcite - Autor (Jahr)}
+Mit dem Befehl \textit{textcite} wird ein Text gemäss \textcite[56-66]{haberli_ernuchternde_2019} in Klammer gesetzt.
+
+\subsection{smartcite - Fussnote mit Autor, Jahr}
+Mit dem Befehl \textit{smartcite} wird Text \smartcite[2]{haberli_ernuchternde_2019} wird derselbe Effekt erreicht wie mit \textit{footcite}
+
+\subsection{cite* - Jahr}
+Mit dem Befehl \textit{cite*} wird nur das Jahr ohne Autor als Text ausgegeben wie \cite*[3]{steinhoff_wie_2003}.
+
+\subsection{parencite* - (Jahr)}
+Mit dem Befehl \textit{parencite*} wird das Jahr in Klammer ausgegeben, ohne vorhergehenden Autor wie \parencite*[3]{steinhoff_wie_2003}.
+
+\subsection{supercite - Autor, Jahr}
+Mit dem Befehl \textit{supercite} werden Autor und Jahr ohne Klammer \supercite[3]{steinhoff_wie_2003} erzeugt, anlog \textit{cite}.
+
+
+\subsection{autocite}
+Mit \textit{autocite} wird ein Zitat ohne Klammer erstellt wie mit \autocite[3]{steinhoff_wie_2003}. Ich könnte mir jedoch vorstellen, dass bei eineer anderen biblatex-Einstellung etwas anderes angezeigt wird. Deshalb eher mit Vorsicht zu geniessen. \\
+
+\subsection{citeauthor - Autor}
+Mit \textit{citeauthor} wird ein Zitat nur mit dem Autor angegeben, wie es \citeauthor{grimm_kinder-_1812} in ihrem Buch dargelegt haben.
+
+\subsection{citeauthor* - Autor}
+Mit \textit{citeauthor*} wird ein Zitat nur mit dem Autor angegeben, wie es \citeauthor*{grimm_kinder-_1812} in ihrem Werk bereits zum Besten gegeben haben. Diese scheint genau dasselbe zu sein wie oben.
+
+\subsection{citetitle - Titel}
+Mit \textit{citetitle} wird bei einem Zitat auf den Titel Bezug genommen, wie es im Buch \citetitle[3]{grimm_kinder-_1812} erwähnt wird.
+
+\section{Erstellung Dokument inkl. Bibliographie}
+Mit dem Befehl \textit{pdflatex dateiname} wird das Ganze normal erstellt und mit \textit{biber dateiname} wird für die Bibliographie benötigt. \textit{dateiname} sollte ohne Endung eingegeben werden, weil \textit{biber} damit ein Problem hat.
+
+\subsection*{Lustiges}
+\TeX ist eine schöne Darstellung wie \LaTeX . Ist dasselbe auch mit BibTex möglich?
